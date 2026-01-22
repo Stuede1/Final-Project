@@ -18,6 +18,7 @@
   <body>
     <section id="landing">
       <nav class="nav">
+        <div class="row">
         <div class="nav__logo">
           <img
             src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
@@ -43,6 +44,7 @@
             <a href="#" class="nav__link nav__cta nav__cta--signup">Sign Up</a>
           </li>
         </ul>
+      </div>
       </nav>
 
       <div class="modal__links">
@@ -54,7 +56,7 @@
         <a href="#" class="modal__link modal__link--primary">Sign Up</a>
       </div>
       <header class="header">
-        <div class="header__content">
+        <div class="row">
           <div class="header__text">
             <h1 class="header__title">
               Beautiful React Templates <span>for you.</span>
@@ -64,7 +66,7 @@
               modular components with a variety of pages and components.
             </p>
             <form id="emailForm" class="header__form" novalidate>
-              <div class="form-group">
+              <div class="form-group email-input-wrapper">
                 <input
                   type="email"
                   id="email"
@@ -74,15 +76,15 @@
                   required
                   pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                 />
+                <button type="submit" class="email-button">
+                  Get Started
+                </button>
                 <div
                   class="error-message"
                   id="emailError"
                   aria-live="polite"
                 ></div>
               </div>
-              <button type="submit" class="btn btn--primary">
-                Get Started
-              </button>
             </form>
             <div class="header__trusted">
               <p>OUR TRUSTED CUSTOMERS</p>
