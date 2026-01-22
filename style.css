@@ -251,7 +251,7 @@ p {
   }
 
   .nav__links {
-    display: none; /* Will be toggled by JavaScript */
+    display: none; 
   }
 
   .mobile-menu-btn {
@@ -333,6 +333,7 @@ p {
   margin: 0;
   border-radius: 50px 0 0 50px;
   transition: border-color 0.3s ease;
+  width: 100%;
 }
 
 .email__input:focus {
@@ -354,8 +355,8 @@ p {
   transition: all 0.3s ease;
   white-space: nowrap;
   border-radius: 50px;
-  height: 42px; /* Slightly smaller to fit inside the wrapper */
-  margin: 3px; /* To center it vertically */
+  height: 42px; 
+  margin: 3px; 
   flex-shrink: 0;
 }
 
@@ -469,7 +470,6 @@ p {
 }
 
 /* ===== Features ===== */
-/* ===== Features Section ===== */
 .features {
   padding: 6rem 0;
   background-color: #f7fafc;
@@ -479,7 +479,7 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 80px 12;
 }
 
 .features__header {
@@ -1097,6 +1097,9 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  max-width: 75%;
+  min-width: 50%;
+  flex-direction: column;
 }
 
 .pricing__plan {
@@ -1113,7 +1116,7 @@ p {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  border-top: 4px solid #38b2ac; /* Teal by default */
+  border-top: 4px solid #38b2ac; 
   transform: translateY(0);
 }
 
@@ -1141,14 +1144,14 @@ p {
     0 20px 25px -5px rgba(30, 64, 175, 0.1),
     0 10px 10px -5px rgba(30, 64, 175, 0.04);
   background-color: #dbeafe; /* Slightly darker blue on hover */
-  border-top-color: #2563eb; /* Brighter blue border on hover */
+  border-top-color: #2563eb; 
 }
 
 .pricing__plan--featured {
   transform: scale(1.05);
-  background: #e0f2fe; /* Light blue */
-  color: #1e40af; /* Dark blue text for better contrast */
-  border-top: 4px solid #3b82f6; /* Blue border */
+  background: #e0f2fe; 
+  color: #1e40af;
+  border-top: 4px solid #3b82f6; 
   z-index: 1;
   transition: all 0.3s ease;
 }
@@ -1158,7 +1161,7 @@ p {
 .pricing__plan--featured .plan__billing,
 .pricing__plan--featured .plan__description,
 .pricing__plan--featured .plan__features li {
-  color: #1e40af; /* Dark blue text for better contrast */
+  color: #1e40af; 
 }
 
 .plan__header {
@@ -1224,6 +1227,10 @@ p {
   margin-top: 4rem;
 }
 
+.testimonials .container{
+    padding: 80px 12px;
+}
+
 .testimonial {
   background-color: var(--white);
   padding: 2rem;
@@ -1264,25 +1271,29 @@ p {
 /* ===== CTA ===== */
 #start {
   background-color: #6415ff;
-  padding: 6rem 5%;
-  margin: 0 5%;
+  padding: 6rem 0; 
+  margin: 0 auto; 
   border-radius: 10px;
+  max-width: 1200px; 
+  width: 60%;
+  box-sizing: border-box;
 }
 
 .cta {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 2rem; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cta__content {
   flex: 1;
-  min-width: 300px;
 }
 
 .cta__title {
@@ -1336,6 +1347,7 @@ p {
   .cta {
     flex-direction: column;
     text-align: center;
+    padding: 0 1rem;
   }
 
   .cta__buttons {
@@ -1344,7 +1356,7 @@ p {
   }
 
   .cta__title {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
 }
 
@@ -1478,7 +1490,6 @@ p {
     font-size: 1.75rem;
   }
   .footer__top {
-    flex-direction: column;
     gap: 3rem;
     text-align: center;
   }
