@@ -522,44 +522,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      // Mobile menu functionality
-      function openMenu() {
-        document.body.classList.add("menu--open");
-      }
-
-      function closeMenu() {
-        document.body.classList.remove("menu--open");
-      }
-
-      // Close menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!e.target.closest(".modal") && !e.target.closest(".btn__menu")) {
-          closeMenu();
-        }
-      });
-
-      // Add animation class when element is in viewport
-      const animateElements = document.querySelectorAll(".animate");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("animated");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        {
-          threshold: 0.1,
-        },
-      );
-
-      animateElements.forEach((element) => {
-        observer.observe(element);
-      });
-    </script>
   </body>
 </html>

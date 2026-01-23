@@ -1,4 +1,5 @@
 // Mobile Menu Functionality
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('.mobile-menu-btn');
     const closeButton = document.querySelector('.mobile-menu-close');
