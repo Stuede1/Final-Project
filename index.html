@@ -404,44 +404,62 @@
             <h2 class="section__title">
               What Our <span class="purple">Clients Say</span>
             </h2>
-            <div class="testimonials">
-              <div class="testimonial animate">
-                <div class="testimonial__content">
-                  <p>
-                    "This product has completely transformed how we do business.
-                    The team's dedication to quality is unmatched."
-                  </p>
-                </div>
-                <div class="testimonial__author">
-                  <img
-                    src="./assets/photo-1494790108377-be9c29b29330.avif"
-                    alt="Sarah Johnson"
-                    class="author__image"
-                  />
-                  <div class="author__info">
-                    <h4>Sarah Johnson</h4>
-                    <p>CEO, TechCorp</p>
+            <div class="testimonial-carousel">
+              <button class="carousel-btn carousel-prev" aria-label="Previous testimonial">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="testimonial-track">
+                <div class="testimonial-slide active">
+                  <div class="testimonial">
+                    <div class="testimonial__content">
+                      <p>
+                        "This product has completely transformed how we do business.
+                        The team's dedication to quality is unmatched."
+                      </p>
+                    </div>
+                    <div class="testimonial__author">
+                      <img
+                        src="./assets/photo-1494790108377-be9c29b29330.avif"
+                        alt="Sarah Johnson"
+                        class="author__image"
+                      />
+                      <div class="author__info">
+                        <h4>Sarah Johnson</h4>
+                        <p>CEO, TechCorp</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="testimonial-slide">
+                  <div class="testimonial">
+                    <div class="testimonial__content">
+                      <p>
+                        "Incredible service and support. The team went above and
+                        beyond to meet our needs."
+                      </p>
+                    </div>
+                    <div class="testimonial__author">
+                      <img
+                        src="./assets/michael.avif"
+                        alt="Michael Chen"
+                        class="author__image"
+                      />
+                      <div class="author__info">
+                        <h4>Michael Chen</h4>
+                        <p>CTO, InnovateX</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more testimonials here if needed -->
               </div>
-              <div class="testimonial animate">
-                <div class="testimonial__content">
-                  <p>
-                    "Incredible service and support. The team went above and
-                    beyond to meet our needs."
-                  </p>
-                </div>
-                <div class="testimonial__author">
-                  <img
-                    src="./assets/michael.avif"
-                    alt="Michael Chen"
-                    class="author__image"
-                  />
-                  <div class="author__info">
-                    <h4>Michael Chen</h4>
-                    <p>CTO, InnovateX</p>
-                  </div>
-                </div>
+              <button class="carousel-btn carousel-next" aria-label="Next testimonial">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+              <div class="carousel-dots">
+                <button class="dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+                <button class="dot" data-index="1" aria-label="Go to testimonial 2"></button>
+                <!-- Add more dots if you add more testimonials -->
               </div>
             </div>
           </div>
